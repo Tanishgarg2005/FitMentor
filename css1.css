@@ -1,0 +1,398 @@
+
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background:#15171c;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #15171c;
+    height: 40px;
+    border-bottom: 2px solid #797777;
+}
+
+.navbar .logo img {
+    height: 80px;
+    width: auto;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    gap: 50px;
+}
+
+.navbar .nav-links li {
+    display: flex;
+    align-items: center;
+}
+.loginbtn {
+    border: 2px solid 15171c;
+    border-radius: 5px;
+}
+
+.loginbtn a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.loginbtn button {
+    cursor: pointer;
+    background-color: #FFA500;
+    color: white;
+    padding: 2px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #FFA500;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    display: none;
+
+}
+.Explore{
+    color: #FFA500;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 0; 
+    background-color:e9ecef;
+    height: 500px;
+    overflow: hidden;
+    
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    margin-top: -10px; 
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.card {
+    max-width: 800px;
+    margin: 20px auto;
+    /* padding: 20px; */
+    background-color: white;
+    border: 3px solid #FFA500;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    /* height: 50vh; */
+    height: 400px;
+}
+.app{
+    border: 2px solid #FFA500;
+    height:430px;
+}
+
+.card img {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    /* border-radius: 8px; */
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #555;
+    font-size: 1rem;
+}
+.after_hero{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+.events{
+    color: #FFA500;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    
+}
+.container {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    border: 2px solid #FFA500;
+}
+
+.left {
+    padding: 20px;
+    width: 40%;
+    background-color: #1c1e24;
+    color: #f2f2f2;
+}
+
+.left h2 {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.left .event-details {
+    margin-top: 20px;
+    background-color: #2c2e34;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+.right {
+    padding: 20px;
+    width: 60%;
+    background-color: #fff;
+    color: #000;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header h4 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.calendar .day {
+    font-weight: 700;
+    color: #1c1e24;
+}
+
+.calendar div {
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s;
+}
+
+.calendar .highlight {
+    background-color: #87CEEB;
+    color: #fff;
+}
+
+.calendar div:hover {
+    background-color: #d1eaff;
+}
+
+.calendar .selected {
+    background-color: #2c2d31;
+    color: #fff;
+}
+
+.btn {
+    background-color: #1c1e24;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #34373e;
+}
+
+.footer {
+    background-color: #15171c;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #797777;
+}
+
+.footer-logo img {
+    height: 90px;
+    margin-bottom: 12px;
+}
+
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-social .social-icon {
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 32px;
+    color: #FFA500;
+    transition: color 0.3s;
+}
+
+.footer-social .social-icon:hover {
+    color: #b77b0c;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #FFA500;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #b77b0c;
+}
+
+.footer p {
+    margin-top: 10px;
+    color: #CCCCCC;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #dbdada;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #FFA500;
+    }
+
+    .navbar .nav-links a {
+        padding: 15px;
+        font-size: 18px;
+    }
+    .loginbtn{
+        display: none;
+    }
+    .container {
+        width: 550px;
+    }
+    .app{
+        width: 550px;
+    }
+    .calendar div{
+        padding: 6px;
+    }
+}
+.right{
+    float: right;
+}
+

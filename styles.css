@@ -1,0 +1,158 @@
+/* General Styles */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:e9ecef;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #15171c;
+    height: 40px;
+    border-bottom: 2px solid #797777;
+}
+
+.navbar .logo img {
+    height: 80px;
+    width: auto;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    gap: 50px;
+}
+
+.navbar .nav-links li {
+    display: flex;
+    align-items: center;
+}
+.loginbtn {
+    border: 2px solid 15171c;
+    border-radius: 5px;
+}
+
+.loginbtn a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.loginbtn button {
+    cursor: pointer;
+    background-color: #FFA500;
+    color: white;
+    padding: 2px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #FFA500;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    display: none;
+
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 80px; 
+    background-color: #2a2d36;
+}
+
+
+.chat-section {
+    background-color: rgb(204, 203, 203);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 3;
+}
+
+.chat-box {
+    background-color: rgb(245, 241, 241); /* Light Gray */
+    border-radius: 8px;
+    padding: 10px;
+    height: 500px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-bottom: 15px;
+}
+
+.message-input {
+    display: flex;
+    gap: 10px;
+}
+
+.message-input textarea {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #001F3F; /* Navy Blue */
+}
+
+.message-input button {
+    background-color: rgb(76, 112, 241); /* Vibrant Yellow */
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #001F3F; /* Navy Blue */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color:rgb(207, 206, 206); /* Light Gray */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 2;
+    margin-left: 20px;
+    color: #FFA500;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    cursor: pointer;
+    color: #001F3F; /* Navy Blue */
+}
+
+.faq-answer {
+    display: none;
+    color: #495057; /* Medium Gray */
+}
