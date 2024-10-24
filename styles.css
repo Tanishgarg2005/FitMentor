@@ -9,6 +9,9 @@ body {
     font-family: Arial, sans-serif;
     background-color:e9ecef;
 }
+#ko{
+    color: rgb(10, 75, 75);
+}
 
 /* Navbar */
 .navbar {
