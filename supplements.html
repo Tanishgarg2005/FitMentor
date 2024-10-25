@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Master - Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="supplement_css.css">
+    
+  
+</head>
+<body>
+
+    <header>
+       
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo-white-removebg-preview (1).png" alt="FitMentor logo"></a>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">SUPPLEMENTS</a></li>
+                <li><a href="#">PROGRAMS</a></li>
+                <li><a href="community.html">COMMUNITY</a></li>
+                <li><a href="#">TOOLS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <!-- <li class="loginbtn"><a href="login">LOG IN</a></li> -->
+            </ul>
+            <div class="loginbtn">
+                <button><a href="login.html"></a>Login/Register</button>
+            </div>
+           
+        </nav>
+        
+    </header>
+    
+    <div class="banner">
+        <h2>Fuel Your Body</h2>
+        <p>Discover our range of supplements and protein powders designed to help you reach your fitness goals.</p>
+    </div>
+    
+    <section class="products-container">
+        <div class ="product-card"id="protein-card">
+            <img class ="image" src="https://cdn.staticans.com/image/tr:e-sharpen-01,h-712,w-712,cm-pad_resize/catalog/optimum/product/1118949/1118949_1.jpg" alt="Whey Protein">
+            <h3>Whey Protein</h3>
+            <p>Boost your muscle recovery with high-quality whey protein. Perfect for post-workout nutrition.</p>
+            
+            <button>View</button>
+        </div>
+    
+        <div class="product-card" id="creatine-card">
+            <img  class ="image" src="https://wellversed.in/cdn/shop/files/Slide1_LISTING100GM_UnflavouredCREATINE_WELLCORE_WELLVERSED_png_740x740.png?v=1715974769" alt="Creatine Monohydrate">
+            <h3>Creatine Monohydrate</h3>
+            <p>Enhance your strength and performance with pure creatine. Ideal for athletes and fitness enthusiasts.</p>
+           
+            <button>View</button>
+        </div>
+    
+        <div class="product-card" id = "preworkout-card">
+            <img  class ="image" src="https://wellversed.in/cdn/shop/files/FrontPrimaryListing_30Serve_Preworkout_Dynamite_Wellversed-2_740x740.png?v=1719297718" alt="Pre-Workout Supplement">
+            <h3>Pre-Workout</h3>
+            <p>Increase your energy and focus with our pre-workout formula, packed with powerful ingredients.</p>
+            
+            <button>View</button>
+        </div>
+
+        <div class="product-card" id = "multivitamins-card">
+            <img  class ="image" src="https://m.media-amazon.com/images/I/41q0knrn81L._SX300_SY300_QL70_FMwebp_.jpg" alt="Multi Vitamins">
+            <h3>Multi-Vitamins</h3>
+            <p>Increase your energy and focus with our pre-workout formula, packed with powerful ingredients.</p>
+            
+            <button>View</button>
+        </div>
+
+        <div class="product-card" id = "bcaa-card">
+            <img  class ="image" src="https://nutralabz.in/cdn/shop/files/BCAA_BB_3.jpg?v=1726323176&width=800" alt="BCAA">
+            <h3>BCAA</h3>
+            <p>Increase your energy and focus with our pre-workout formula, packed with powerful ingredients.</p>
+            
+            <button>View</button>
+        </div>
+    
+    
+        <!-- Add more product cards here as needed -->
+    </section>
+
+    <div class="overlay" id="overlay"></div>
+
+<div class="modal" id="proteinModal">
+    <span class="close-modal" id="closeProteinModal">&times;</span>
+    <div class="modal-header">Choose Your Protein Type</div>
+    <div class="modal-body">
+        <div>Isolate Protein - $34.99 <button style="margin-left: 350px;"    class = "cartbtn">Add to Cart</button></div> 
+        <div>Concentrate Protein - $29.99 <button style="margin-left: 310px;"    class = "cartbtn">Add to Cart</button></div>
+        <div>Hydrolyzed Protein - $39.99 <button style="margin-left: 315px;"    class = "cartbtn">Add to Cart</button></div>
+    </div>
+</div>
+
+<div class="modal" id="creatineModal">
+    <span class="close-modal" id="closeCreatineModal">&times;</span>
+    <div class="modal-header">Choose Your Creatine Type</div>
+    <div class="modal-body">
+        <div>Monohydrate Creatine - $19.99 <button style="margin-left: 310px;"    class = "cartbtn">Add to Cart</button></div>
+        <div>Buffered Creatine - $24.99 <button style="margin-left: 340px;"    class = "cartbtn">Add to Cart</button></div>
+    </div>
+</div>
+
+<div class="modal" id="preworkoutModal">
+    <span class="close-modal" id="closePreworkoutModal">&times;</span>
+    <div class="modal-header">Choose Your Pre-Workout</div>
+    <div class="modal-body">
+        <div>Caffeine Boost - $24.99 <button style="margin-left: 350px;"    class = "cartbtn">Add to Cart</button> </div>
+        <div>Non-Stimulant - $19.99 <button style="margin-left: 350px;"    class = "cartbtn">Add to Cart</button></div>
+    </div>
+</div>
+
+<div class="modal" id="multivitaminsModal">
+    <span class="close-modal" id="closemultivitaminsModal">&times;</span>
+    <div class="modal-header">Choose Your Multi-Vitamins</div>
+    <div class="modal-body">
+        <div>Opti-Men - $24.99 <button style="margin-left: 370px;"    class = "cartbtn">Add to Cart</button> </div>
+        <div>Animal Pak - $39.99 <button style="margin-left: 360px;"    class = "cartbtn">Add to Cart</button></div>
+        <div>MuscleTech Platinum Multivitamin - $14.99 <button style="margin-left: 200px;"    class = "cartbtn">Add to Cart</button></div>
+    </div>
+</div>
+    
+
+<div class="modal" id="bcaaModal">
+    <span class="close-modal" id="closebcaaModal">&times;</span>
+    <div class="modal-header">Choose Your BCAA</div>
+    <div class="modal-body">
+        <div>Scivation Xtend BCAA - $39.99 <button style="margin-left: 300px;"    class = "cartbtn">Add to Cart</button> </div>
+        <div>MusclePharm BCAA 3:1:2 - $29.99 <button style="margin-left: 270px;"    class = "cartbtn">Add to Cart</button></div>
+    </div>
+</div>
+    
+    
+    
+    <footer class="footer">
+        <div class="footer-logo">
+            <a href="index.html"><img src="logo-white-removebg-preview (1).png" alt="FitMentor logo"></a>
+        </div>
+        
+        <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+        <ul class="footer-nav">
+            <li><a href="#">WORKOUTS</a></li>
+            <li><a href="#">PROGRAMS</a></li>
+            <li><a href="community.html">COMMUNITY</a></li>
+            <li><a href="#">TOOLS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+        
+        <p>&copy; 2024 FitMentor. All rights reserved.</p>
+    </footer>
+    <script src="supplement_js.js"></script>
+
+</html>
